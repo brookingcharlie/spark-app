@@ -1,6 +1,6 @@
 # Spark Application
 
-Simple application to get started with Apache Spark.
+Simple Scala application to get started with Apache Spark.
 
 Based on the official Apache Spark guides:
 [Quick Start](http://spark.apache.org/docs/1.6.0/quick-start.html) and
