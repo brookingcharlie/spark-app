@@ -1,4 +1,4 @@
-name := "Simple App"
+name := "Spark App"
 
 version := "1.0"
 
