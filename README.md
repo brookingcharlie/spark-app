@@ -20,6 +20,11 @@ to generate Eclipse project files. Run the command below then open Eclipse and s
 sbt eclipse 
 ```
 
+API references:
+
+* http://spark.apache.org/docs/1.6.0/api/scala/index.html
+* http://www.scala-lang.org/api/2.10.6/index.html
+
 ## Packaging the application
 
 Use the following command to package your Spark application as a JAR file.
@@ -59,8 +64,3 @@ To create a local Spark cluster with two slaves:
 /opt/spark/bin/spark-class org.apache.spark.deploy.worker.Worker -h 192.168.50.4 -m 1G spark://192.168.50.4:7077 &
 /opt/spark/bin/spark-class org.apache.spark.deploy.worker.Worker -h 192.168.50.4 -m 1G spark://192.168.50.4:7077 &
 ```
-
-## API references
-
-* http://spark.apache.org/docs/1.6.0/api/scala/index.html
-* http://www.scala-lang.org/api/2.10.6/index.html
