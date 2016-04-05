@@ -51,6 +51,8 @@ To create a local Spark cluster with a single slave:
 /opt/spark/sbin/start-slave.sh -h localhost -m 1G spark://localhost:7077
 ```
 
+You can now view the Spark Web UI at <http://localhost:8080/>.
+
 To submit a job to the Spark cluster:
 
 ```
