@@ -47,20 +47,20 @@ worker threads.
 To create a local Spark cluster with a single slave:
 
 ```
-/opt/spark/sbin/start-master.sh -h 192.168.50.4
-/opt/spark/sbin/start-slave.sh -h 192.168.50.4 -m 1G spark://192.168.50.4:7077
+/opt/spark/sbin/start-master.sh -h localhost
+/opt/spark/sbin/start-slave.sh -h localhost -m 1G spark://localhost:7077
 ```
 
 To submit a job to the Spark cluster:
 
 ```
-/opt/spark/bin/spark-submit --class App --master spark://192.168.50.4:7077 target/scala-2.10/*.jar
+/opt/spark/bin/spark-submit --class App --master spark://localhost:7077 target/scala-2.10/*.jar
 ```
 
 To create a local Spark cluster with two slaves:
 
 ```
-/opt/spark/sbin/start-master.sh -h 192.168.50.4
-/opt/spark/bin/spark-class org.apache.spark.deploy.worker.Worker -h 192.168.50.4 -m 1G spark://192.168.50.4:7077 &
-/opt/spark/bin/spark-class org.apache.spark.deploy.worker.Worker -h 192.168.50.4 -m 1G spark://192.168.50.4:7077 &
+/opt/spark/sbin/start-master.sh -h localhost
+/opt/spark/bin/spark-class org.apache.spark.deploy.worker.Worker -h localhost -m 1G spark://localhost:7077 &
+/opt/spark/bin/spark-class org.apache.spark.deploy.worker.Worker -h localhost -m 1G spark://localhost:7077 &
 ```
